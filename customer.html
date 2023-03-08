@@ -1,0 +1,143 @@
+<!--
+Name: Yajie Yang
+Date: Jan 31,2023
+Section: CST 8285 302
+This is the Lab2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <title>Customer Regstration</title>
+     <meta charset="UTF-8">
+     <meta name="description" content="Lab2"> 
+     <meta name="keywords" content="form"> 
+     <meta name="author" content="Yajie Yang">
+
+
+</head>
+
+<form action="process.php" method="get" enctype="text/plain">
+    <fieldset>
+        <legend>1.User Info</legend><br>
+        <div style="width:250px; height:auto; float:left">   
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" maxlength="10"><br> 
+        </div>
+
+        <div style="width:200px; height:auto; float:left">
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" value="Yang" readonly><br><br>
+        </div>
+
+        <div style="clear:both"></div>
+
+        <label for="ema">Enter your email</label>
+        <input type="email" id="ema" name="email" required size="60"
+         placeholder="format for email is xxx@yyy.zzz"> <br><br>
+
+        <div style="width:250px; height:auto; float:left; display:inline">
+        <label for="cc1">Passward</label><br>
+        <input type="text" id="cc1" name="secret" maxlength="8" placeholder="at least 8 characters"><br>
+        </div>
+
+        <div style="width:250px; height:auto; float:left; display:inline">
+        <label for="cc2">Passward Repeat</label><br>
+        <input type="text" id="cc2" name="secret" maxlength="8" placeholder="at least 8 characters"><br>
+        </div>
+    </fieldset><br>
+
+
+
+    <fieldset>
+        <legend>2.location</legend><br>
+
+        <label for="add">Address</label><br>
+        <input type="text" id="add" name="address"  size="60"> <br><br>
+
+        <div style="width:200px; height:auto; float:left; display:inline">
+        <label for="city">City</label><br>
+        <input type="text" id="city" name="city"><br>
+        </div>>
+        <div style="width:100px; height:auto; float:left; display:inline">
+        <label for="state">State</label><br>
+        <input type="text" id="state" name="state"  size="8"><br>
+        </div>
+
+        <div style="width:150px; height:auto; float:left; display:inline">
+        <label for="zip">Zip</label><br>
+        <input type="text" id="zip" name="zip"  size="18"> <br><br>
+        </div>
+
+        <div style="clear:both"></div>
+
+
+        <div style="width:250px; height:auto; float:left; display:inline">
+        <label for="php">Phone</label><br>
+        <input type="text" id="php" name="phone"  size="30" placeholder="NNN-NNN-NNN"><br>
+        </div>
+
+        <div style="width:180px; height:auto; float:left; display:inline">
+        <label for="country">Country</label><br>
+         <select name="country" id="country" >
+            <option>Canada</option>
+            <option value="AS">American</option>
+            <option value="CA">Canada</option>
+            <option value="FR">France</option>
+            <option value="DE">Germany</option>
+            <option value="MX">Mexico</option>
+            <option value="CU">Cuba</option>
+        </select><br><br>
+        </div>
+
+        <div style="clear:both"></div>
+
+        <label>Continent</label><br>
+        
+        <input type="radio" id="north" name="gender" value="north">
+        <label for="north">North America</label><br>
+
+        <input type="radio" id="eur" name="gender" value="eur">
+        <label for="eur">Europe</label><br>
+
+        <input type="radio" id="south" name="gender" value="south">
+        <label for="south">South America</label><br><br>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>3.Personal Details</legend><br>
+        <div style="width:180px; height:auto; float:left; display:inline">
+        <label for="cc8"> Birth Day</label><br>
+        <input type="date" id="cc8" name="appt-date">
+        </div>
+
+        <div style="width:180px; height:auto; float:left; display:inline">
+        <label for="cc7">color </label><br>
+        <input
+          type="color"
+          name="bg-color"
+          id="cc7"
+        ><br>
+        </div>
+        <div style="clear:both"></div>
+        <p>Interest In Art</p>
+
+        <label for="cc6"></label>
+        <em>Minimal</em><input type="range" id="cc6" name="age" min="0" max="100"><em>Love it </em>
+    </fieldset>
+
+     <h3>4.All Done</h3>
+        <input type="checkbox" id="cc5" name="agree" >
+        <label for="cc5"> I agree to the</label>
+        <a href="#" target="blank"> Term of the Site</a><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+
+      <footer>
+        <h3>2023 Copyright</h3>
+       
+   </footer>
+
+   
